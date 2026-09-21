@@ -15,7 +15,7 @@ $(function () {
       //start game
       setInterval(main, 1000 / frameRate);
     }
-
+  
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(118, 0, 233)"); // bottom wall
@@ -27,20 +27,37 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+toggleGrid();
+
 
 
     // TODO 2 - Create Platforms
 
-
-
-
+createPlatform(400,0,20,290);
+createPlatform(1350, 400, 50, 50);
+createPlatform(100, 20, 10, 10);
+createPlatform(200,600,90,30);
+createPlatform(300,500,90,30);
+createPlatform(400, 400, 90, 30, "purple");
+createPlatform(600, 600, 90, 30, "teal");
+createPlatform(700,500,90,30, "yellow");
+createPlatform(900, 400,90,30, "orange");
+createPlatform(1100,400,90,30, "blue");
+createBadPlatform(500, 400, 100, 20, "red");
+createBadPlatform(700, 300, 90, 30, "blue");
     // TODO 3 - Create Collectables
+
+createCollectable("steve", 1350, 50);
+createCollectable("james", 700, 600, 0.5, 0.7);
+createCollectable("diamond", 300, 170, 0.5, 0.7);
 
 
 
     
-    // TODO 4 - Create Cannons
+    // TODO 4 - Create Cannons      
+  createCannon("top", 200, 100);
+  createCannon("right", 300, 200);
+  createCannon("left", 400, 300);
 
 
     
