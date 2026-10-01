@@ -27,7 +27,7 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-toggleGrid();
+//toggleGrid();
 
 
 
@@ -65,7 +65,8 @@ createCannon("right", 300, 950);
   createCannon("right", 600, 1000);
   createCannon("top", 1000, 850);
 createCannon("top", 400, 2000, 20, 10, 400, 800, 2);
-
+createProjectile("left", 100, 1000, 10, 5)
+createCannon("top", 200, 2000, 20, 10, 100, 400, 2)
     
     
     //////////////////////////////////
