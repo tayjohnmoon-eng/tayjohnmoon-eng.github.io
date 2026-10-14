@@ -70,6 +70,7 @@
 
         // TODO 2 - Variable declarations
 
+var positionX = 0;
 
 
 
@@ -79,9 +80,9 @@
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
-        function update() {moveBoxTo(200); // Moves box to x-position 200
-moveBoxTo(boardWidth); // Moves box to right edge
-
+        function update() {
+          moveBoxTo(positionX);
+          positionX += 10;
 
         
 
@@ -96,7 +97,6 @@ moveBoxTo(boardWidth); // Moves box to right edge
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
 
 
 
