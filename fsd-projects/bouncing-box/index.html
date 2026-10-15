@@ -80,10 +80,10 @@ var positionX = 0;
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
-        function update() {
+        function update() { 
           moveBoxTo(positionX);
           positionX += 10;
-
+moveBoxTo(boardwidth);
         
 
           
@@ -97,7 +97,8 @@ var positionX = 0;
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
+positionX = 0
+changeBoxText(0)
 
 
         }
